@@ -1,0 +1,67 @@
+<div class="container" fxLayout="column" fxLayoutGap="10px">
+  <div fxFlex>
+    <div>
+      <span><img src="/assets/images/icons/nock-nock-logo-wht@2x.png" alt="nock nock" height="20px"> </span>
+    </div>
+    <div>&nbsp;</div>
+  </div>
+
+  <!-- <div fxLayout="row wrap" class="test1">
+    <mat-card *ngFor="let home of homes" fxFlex="50" class="home">
+      <img mat-card-image src="{{home.image}}" alt="photo">
+        <mat-card-actions fxFlexAlign="center">
+          <button mat-button> {{home.name}} </button>
+        </mat-card-actions>
+    </mat-card>
+  </div> -->
+
+  <div class="flex-container">
+    <div class="test">
+      <div>
+        <p class="text">What <strong>Type of Home </strong>are you looking to sell? </p>
+      </div>
+      <div *ngIf="homes.length > 0">
+        <div fxLayout="row wrap" fxLayoutAlign="center">
+            <mat-card *ngFor="let home of homes" fxFlex="40" class="home">
+                <img mat-card-image src="{{home.image}}" alt="{{home.name}}">
+                <mat-card-actions fxFlexAlign="center" align="center">
+                  <button mat-button> {{home.name}} </button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+      </div>
+      <div>
+        <p class="text"><a href="#">Other</a></p>
+      </div>
+      <div>
+        <p class="text"><a><button mat-button routerLink="/homeest" style="margin: 10px 0 10px 0;">Continue</button></a></p>
+      </div>
+    </div>
+    <div class="test1">
+      <div>
+        <span><img src="/assets/images/icons/Group 36@2x.png" alt="nock nock 2" class="r-img"> </span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<!-- fxLayout="column" fxFlex.md="0 1 calc(25% - 20px)" fxFlex="0 1 calc(20% - 20px)" fxFlex.sm="0 1 calc(33% - 20px)" fxFlex.xs="100"  -->
+
+
+<!-- <div fxFlex fxLayoutAlign="start start">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <h3>{{selectedHome.name}}</h3>
+        </mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src={{selectedHome.image}} alt={{selectedHome.name}}>
+      <mat-card-actions>
+        <button mat-button>Single Family</button>
+      </mat-card-actions>
+    </mat-card>
+  </div> -->

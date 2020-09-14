@@ -1,0 +1,40 @@
+<div class="container" fxLayout="column" fxLayoutGap="10px">
+  <div fxFlex>
+    <div>
+      <span><img src="/assets/images/icons/nock-nock-logo-wht@2x.png" alt="nock nock" height="20px"> </span>
+    </div>
+    <div>&nbsp;</div>
+  </div>
+
+
+  <div class="flex-container">
+    <div class="test">
+      <div>
+        <p class="text">What is your <strong>estimated Home budget</strong></p>
+      </div>
+      <div>
+        <p class="amount">{{ myModel }}</p>
+      </div>
+      <div class="slider">
+        <mat-slider [(ngModel)]="myModel" min="1000000" max="5000000" tickInterval="auto" ></mat-slider>
+      </div>
+      <div class="slider-text">
+        <p>$1M $2M $3M $4M $5M+</p>
+      </div>
+      <div>
+        <p class="text"><a><button mat-button routerLink="/homeest">Continue</button></a></p>
+      </div>
+      <div>
+        <p class="text"><a routerLink="/hometype">Back</a></p>
+      </div>
+    </div>
+    <div class="test1">
+      <div>
+        <span><img src="/assets/images/icons/Group 36@2x.png" alt="nock nock 2" class="r-img"> </span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+

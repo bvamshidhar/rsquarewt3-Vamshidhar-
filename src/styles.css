@@ -1,1 +1,214 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/* some basic resets  */
+
+body { 
+  padding: 0; 
+  margin: 0; 
+  font-family: Montserrat, sans-serif;  
+}
+
+.container {
+    margin: 20px;
+    display:flex;
+    position: relative;
+}
+
+body {
+    background-color: rgb(180, 176, 176);
+}
+
+.test {
+    width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-left: 20%;
+    padding: 10px;
+    /* margin-left: 320px; */
+    border-top: 5px solid #2196F3;
+}
+
+/* .test::before {
+    content: ""; 
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 20px;
+    border-bottom: 1px solid #2196F3;
+} */
+
+.test1 {
+    width: 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+.test1 img {
+    position: absolute;
+    left: 20px;
+    bottom: 50px;
+    min-height: 320px;
+    /* min-width: 110px; */
+}
+
+.flex-container {
+    position: relative;
+    display: flex;
+}
+
+
+.r-img {
+    height: 200px;
+    position: fixed; /* or absolute */
+    top: 30%;
+    left: 50%;
+}
+
+
+
+.mat-card {
+    padding: 18px !important; 
+}
+
+.mat-card-image {
+    width: calc(100% + 36px) !important; 
+    margin: 0 -24px 16px -18px !important; 
+}
+
+.mat-tab-label {
+    font-size: 16px !important;
+}
+
+.mat-card-title {
+    font-size:24px !important;
+    font-weight: 500 !important;
+}
+
+.mat-card-content {
+    font-size: 14px !important;
+    min-height: 30px; 
+}
+
+.home {
+    margin-bottom: 25px;
+    /*min-width: 180px;
+    text-align: center;*/
+} 
+
+.home img {
+    height: 100px;
+    object-fit: contain;
+}
+
+/* .test{
+    margin: 50px 50px 0 250px;
+} */
+
+.text {
+    text-align: center;
+}
+
+.text a {
+    color: black;
+}
+
+.amount {
+    text-align: center;
+    margin: 20% 0 -18% 0;
+    font-weight: 700;
+    font-size: large;
+    color: #2196F3;
+}
+
+.test .mat-button {
+    border-radius: 12px;
+    border: 2px solid rgb(95, 189, 221);
+    color: #2196F3;
+    font-weight: 700;
+    padding: 0 25px;
+    margin: 70px 0 20px 0;
+}
+
+
+
+mat-card {
+    transition: none !important;
+    box-shadow: none !important;
+}
+
+
+.mat-slider {
+    width: 100%;
+}
+
+.slider {
+    margin: auto;
+    padding: 20% 10% 0 10%;
+}
+
+.mat-slider.mat-slider-horizontal .mat-slider-track-wrapper {
+    border-radius: 50px;
+}
+
+.mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+    background-color: #2196F3;
+}
+
+
+.test .mat-button .twobtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.slider-text p {
+    word-spacing: 125px;
+    text-align: center;
+    font-weight: 700;
+    color: #2196F3;
+}
+
+@media only screen and (max-width: 1100px){
+    .slider-text p {
+        word-spacing: 80px;
+    }
+}
+
+@media only screen and (max-width: 820px){
+    .slider-text p {
+        word-spacing: 50px;
+    }
+}
+
+@media only screen and (max-width: 630px){
+    .slider-text p {
+        word-spacing: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .slider-text p {
+        word-spacing: 20px;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .slider-text p {
+        word-spacing: 10px;
+    }
+}
+
+.mat-accent .mat-slider-thumb {
+    height: 30px;
+    width: 30px;
+    background-color: #2196F3;
+    background: white;
+    border: solid 3px #2196F3;
+    bottom: -15px;
+    right: -12px;
+}
+
